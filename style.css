@@ -1,12 +1,12 @@
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     width: 100%;
+    white-space: nowrap;
+
   }
 a{
     text-decoration: none;
@@ -20,22 +20,26 @@ a:hover{
     opacity: 0.7;
 }
 header{
-    display: inline-block;
     width: 100%;
-    margin-bottom: 8px;
+    padding: 15px 15px 0px 15px;
 }
 #head1{
     margin-left: 8px;
-    align-items: center;
-    display: inline-block;
-    margin-top: 0.375rem;
-    padding-right: 0.1rem;
+    /* align-items: center; */
+    /* margin-top: 0.375rem; */
+    float: left;
+
 }
 #head2{
-    margin-left: 79%;
-    display: inline-block;
+    /* margin-left: 79%; */
     align-items: center;
-    position: relative;
+    float: right;
+    margin-top: 0;
+    margin-right: 30px;
+    /* margin-top: 0.375rem; */
+}
+#clear{
+    /* clear: both; */
 }
 
 #sign-in{
@@ -78,21 +82,25 @@ a{
 
 }
 #search{
-    width: 500px;
-    height: 42px;
+    font-size: 16px;
+    height: 38px;
+    width: 460px;
     border-radius: 25px;
-    padding-left: 40px;
-    margin: auto;
-    border: 1px solid lightgray;
     padding: 3px;
-
+    border: 1px solid lightgray;
+    padding-left: 50px;
 
 }
+input {
+    width: 200px;
+  }
 
 #glass{
+    height: 30px;
+    width: 30px;
     position: relative;
-    left: 40px;
-    top: 8px;
+    right:468px;
+    top: 10px;
     opacity: 0.5;
 }
 #glass:hover{
@@ -101,10 +109,9 @@ a{
 }
 #mic{
     position: relative;
-    top: 7px;
-    right: 43px;
-    opacity: 1;
-
+    top: 5px;
+    right: 78px;
+    height: 20px;
 
 }
 #mic:hover{
